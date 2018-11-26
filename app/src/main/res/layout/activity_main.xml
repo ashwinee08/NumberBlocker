@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/empty_message"
+        android:text="@string/no_entries_yet_add_some"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:padding="10dp"
+       />
+    <LinearLayout
+        android:id="@+id/data_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:visibility="gone">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@string/numbers"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    />
+                <ListView
+                    android:id="@+id/numbers_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+    </LinearLayout>
+</LinearLayout>
